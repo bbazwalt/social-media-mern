@@ -6,7 +6,7 @@ Social Media Web App
 
 • Wrote REST APIs for CRUD Operations like add, view, update & delete user, post details. Used JWT for Authentication
 
-• Used Multer for image storage, responsive web design using MUI with light & dark mode
+• Used Multer for image storage. Implemented responsive web design with light & dark mode
 
 ## Login Page:
 
