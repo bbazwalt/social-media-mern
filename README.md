@@ -4,7 +4,7 @@ Social Media Web App
 
 • Tech Stack: JavaScript, Node.js, Express, React, Redux, MUI, MongoDB, Mongoose
 
-• Implemented features like uploading text posts, image posts, liking posts, friends list, profile picture, login & signup
+• Implemented features like uploading text posts, image posts, liking posts, friends list, profile picture, Login & Signup
 
 • Used JWT for Authentication, Multer for image storage. Implemented responsive web design with light & dark mode
 
