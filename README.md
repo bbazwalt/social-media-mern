@@ -10,7 +10,7 @@ Social Media Web App
 
 ## Login Page:
 
-!Login Page](https://github.com/bbazwalt/social-media-mern/blob/main/screenshots/login-page.png)
+![Login Page](https://github.com/bbazwalt/social-media-mern/blob/main/screenshots/login-page.png)
 
 ## Home Page Light Mode:
 
