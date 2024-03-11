@@ -1,21 +1,21 @@
-import { useState } from "react";
+import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 import {
   Box,
   Button,
   TextField,
-  useMediaQuery,
   Typography,
+  useMediaQuery,
   useTheme,
 } from "@mui/material";
-import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 import { Formik } from "formik";
-import * as yup from "yup";
-import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-
-import { setLogin } from "../../state/index.js";
+import { useState } from "react";
 import Dropzone from "react-dropzone";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import * as yup from "yup";
 import FlexBetween from "../../components/FlexBetween";
+import { BASE_URL } from "../../config/apiConfig.js";
+import { setLogin } from "../../state/index.js";
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required("required"),
@@ -54,7 +54,7 @@ const Form = () => {
   const navigate = useNavigate();
   const isNonMobile = useMediaQuery("(min-width:600px)");
   const isLogin = pageType === "login";
-  const isRegister = pageType === "register";
+  const isRegister = pageType === "sign up";
 
   const register = async (values, onSubmitProps) => {
     const formData = new FormData();
@@ -63,13 +63,10 @@ const Form = () => {
     }
     formData.append("picturePath", values.picture.name);
 
-    const savedUserResponse = await fetch(
-      "http://localhost:5555/auth/register",
-      {
-        method: "POST",
-        body: formData,
-      }
-    );
+    const savedUserResponse = await fetch(BASE_URL + "/auth/register", {
+      method: "POST",
+      body: formData,
+    });
     const savedUser = await savedUserResponse.json();
     onSubmitProps.resetForm();
 
@@ -79,7 +76,7 @@ const Form = () => {
   };
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch("http://localhost:5555/auth/login", {
+    const loggedInResponse = await fetch(BASE_URL + "/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
@@ -208,7 +205,6 @@ const Form = () => {
                 </Box>
               </>
             )}
-
             <TextField
               label="Email"
               onBlur={handleBlur}
@@ -231,7 +227,6 @@ const Form = () => {
               sx={{ gridColumn: "span 4" }}
             />
           </Box>
-
           <Box>
             <Button
               fullWidth
@@ -244,11 +239,11 @@ const Form = () => {
                 "&:hover": { color: palette.primary.main },
               }}
             >
-              {isLogin ? "LOGIN" : "REGISTER"}
+              {isLogin ? "LOGIN" : "SIGN UP"}
             </Button>
             <Typography
               onClick={() => {
-                setPageType(isLogin ? "register" : "login");
+                setPageType(isLogin ? "sign up" : "login");
                 resetForm();
               }}
               sx={{
