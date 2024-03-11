@@ -6,7 +6,7 @@ Social Media Web App
 
 • Implemented social media functionalities such as text & image posts with like, friends list, profile picture, login & sign up.
 
-• Used JWT for Authentication, Multer for image storage. Implemented responsive web design with light & dark mode.
+• Used JWT for authentication & Multer for image storage. Implemented responsive web design with light & dark mode.
 
 ## Login Page:
 
