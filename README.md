@@ -10,16 +10,16 @@ Social Media Web App
 
 ## Login Page:
 
-![Alt Text](https://github.com/bbazwalt/social-media-mern/blob/main/screenshots/login-page.png)
+!Login Page](https://github.com/bbazwalt/social-media-mern/blob/main/screenshots/login-page.png)
 
 ## Home Page Light Mode:
 
-![Alt Text](https://github.com/bbazwalt/social-media-mern/blob/main/screenshots/home-page-light-mode.png)
+![Home Page Light Mode](https://github.com/bbazwalt/social-media-mern/blob/main/screenshots/home-page-light-mode.png)
 
 ## Home Page Dark Mode:
 
-![Alt Text](https://github.com/bbazwalt/social-media-mern/blob/main/screenshots/home-page-dark-mode.png)
+![Home Page Dark Mode](https://github.com/bbazwalt/social-media-mern/blob/main/screenshots/home-page-dark-mode.png)
 
 ## My Profile Page:
 
-![Alt Text](https://github.com/bbazwalt/social-media-mern/blob/main/screenshots/my-profile-page.png)
+![My Profile Page](https://github.com/bbazwalt/social-media-mern/blob/main/screenshots/my-profile-page.png)
